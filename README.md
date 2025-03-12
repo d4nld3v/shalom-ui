@@ -16,12 +16,6 @@ Shalom Design System provides a cohesive set of components, patterns, and tools 
 
 ## Getting Started
 
-### Installation
-
-```bash
-npm install shalom-design-system --save
-```
-
 ### Usage
 
 Import components into your Angular application:
