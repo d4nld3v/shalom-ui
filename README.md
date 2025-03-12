@@ -1,24 +1,38 @@
-# ShalomDsl
+# Shalom Design System
 
-A Domain-Specific Language (DSL) for Angular applications with Storybook integration.
+A comprehensive Design System for Angular applications with Storybook integration.
 
 ## Overview
 
-ShalomDsl provides a streamlined way to build Angular components and services using a custom DSL approach, making development faster and more consistent.
+Shalom Design System provides a cohesive set of components, patterns, and tools to build consistent Angular applications while following design best practices.
 
 ## Features
 
-- Custom Angular component generation
-- Storybook integration for component visualization
-- Simplified syntax for common Angular patterns
-- Built-in best practices
+- Pre-built Angular components with consistent styling
+- Comprehensive design tokens and theme system
+- Storybook integration for component documentation and visualization
+- Accessibility compliance built-in
+- Responsive design patterns
 
 ## Getting Started
 
 ### Installation
 
 ```bash
-npm install shalom-dsl --save-dev
+npm install shalom-design-system --save
+```
+
+### Usage
+
+Import components into your Angular application:
+
+```typescript
+import { ButtonModule } from "shalom-design-system";
+
+@NgModule({
+  imports: [ButtonModule],
+})
+export class AppModule {}
 ```
 
 ### Development server
@@ -33,15 +47,13 @@ Navigate to `http://localhost:4200/` to view the application.
 
 ### Storybook
 
-Launch Storybook to explore and interact with your components:
+Launch Storybook to explore and interact with the design system components:
 
 ```bash
 npm run storybook
 ```
 
 Navigate to `http://localhost:6006/` to access Storybook.
-
-## License
 
 ## License
 
