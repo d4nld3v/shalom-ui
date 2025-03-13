@@ -127,6 +127,39 @@
           }
         }
       }
+    },
+    "shalom-ui": {
+      "projectType": "library",
+      "root": "projects/shalom-ui",
+      "sourceRoot": "projects/shalom-ui/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/shalom-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/shalom-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/shalom-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/shalom-ui/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

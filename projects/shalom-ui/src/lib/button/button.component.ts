@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 
 @Component({
   selector: 'sl-button',
@@ -7,6 +13,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   imports: [CommonModule],
   templateUrl: './button.component.html',
   styleUrls: ['./button.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {
   /** Is this the principal call to action on the page? */
