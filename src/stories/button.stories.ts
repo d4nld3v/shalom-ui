@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { fn } from '@storybook/test';
-import { ButtonComponent } from 'shalom-ui';
+import { ButtonComponent } from '../../projects/shalom-ui/src/public-api';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta: Meta<ButtonComponent> = {
@@ -36,6 +36,12 @@ export const Secondary: Story = {
 export const Large: Story = {
   args: {
     size: 'large',
+    label: 'Button',
+  },
+};
+export const Medium: Story = {
+  args: {
+    size: 'medium',
     label: 'Button',
   },
 };
